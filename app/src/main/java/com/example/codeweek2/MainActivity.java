@@ -61,13 +61,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public class data{
+    public class data {
 
         private int x;
         private int y;
         private char ch;
 
-        data(){
+        data() {
             this.x = x;
             this.y = y;
             this.ch = ch;
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
             for (int j = 0; j < ch.length; j++) {
 
 
-                dup.add((ch[i][j] + " \t" + i + " " + j + " \t"));
+                dup.add((ch[i][j] + " " + i + " " + j + ""));
 
 
             }
@@ -97,10 +97,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        for(int i =0; i < dup.size(); i++){
-            for(int j =0; j < dup.size(); j++){
-                if(dup.get(i).charAt(0) == dup.get(j).charAt(0))
-                    System.out.println(dup.get(i) + " " + dup.get(j));
+        for (int i = 0; i < dup.size(); i++) {
+            for (int j = 0; j < dup.size(); j++) {
+                if (dup.get(i).charAt(0) == dup.get(j).charAt(0))
+                    System.out.println(dup.get(i));
 
             }
 
